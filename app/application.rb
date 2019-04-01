@@ -5,9 +5,11 @@ class Application
 
     now = Time.now
     if now.hour > 12
-      return "Afternoob"
+      resp.write "Afternoon"
     else
-      return "Morning"
+      resp.write "Morning"
     end
     resp.finish
   end
+
+end
